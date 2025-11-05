@@ -5,21 +5,21 @@
 class Qv < Formula
   desc "A CLI tool for quick variable management"
   homepage "https://github.com/shivgitcode/qv"
-  version "2.0.2"
+  version "2.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shivgitcode/qv/releases/download/v2.0.2/qv_2.0.2_darwin_amd64.tar.gz"
-      sha256 "baa0aa84562aeb6e982a07ebe85a10a5ee4a0c1b526f62abff99f9779d0a3116"
+      url "https://github.com/shivgitcode/qv/releases/download/v2.0.3/qv_2.0.3_darwin_amd64.tar.gz"
+      sha256 "398b86f93beb15b5ce5c4a0a358b3089937f7ae1b952079bc9ce8f4ff1c2142a"
 
       def install
         bin.install "qv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shivgitcode/qv/releases/download/v2.0.2/qv_2.0.2_darwin_arm64.tar.gz"
-      sha256 "bf41450e59e2343f0ee4759f500e295f2ea7770e8cbb343dddc87e7c6992ffb0"
+      url "https://github.com/shivgitcode/qv/releases/download/v2.0.3/qv_2.0.3_darwin_arm64.tar.gz"
+      sha256 "452315fd869817aa1fd36210bbadc0b2e0967e6e7a248a4aed395770201f93fd"
 
       def install
         bin.install "qv"
@@ -29,15 +29,15 @@ class Qv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shivgitcode/qv/releases/download/v2.0.2/qv_2.0.2_linux_amd64.tar.gz"
-      sha256 "1975f1bfec4f0be9dd8146a01163810d43b2b614ac3d61f6594e306d839ac416"
+      url "https://github.com/shivgitcode/qv/releases/download/v2.0.3/qv_2.0.3_linux_amd64.tar.gz"
+      sha256 "a12e80609bab7deff6c1a7f7b07af9e96f7dd705acba8fa39a199a784bfad6b5"
       def install
         bin.install "qv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shivgitcode/qv/releases/download/v2.0.2/qv_2.0.2_linux_arm64.tar.gz"
-      sha256 "03e9a2e2462d7d6d22385a1d1eb8f4cc7b6d57df7fd854147645d2b5eac6e250"
+      url "https://github.com/shivgitcode/qv/releases/download/v2.0.3/qv_2.0.3_linux_arm64.tar.gz"
+      sha256 "70c9e3b92d7c9ac7c069701d8b41ef01f7b02304c10c53d89f870acaf50929ae"
       def install
         bin.install "qv"
       end
